@@ -1,5 +1,4 @@
-#Names: Rohan Bhuyan
-#Introduction to AI Final Project - Suicide Checkers
+#Author: Rohan Bhuyan
 # The game is in a 6x6 matrix with B representing Black pieces, W representing White pieces, - representing empty spaces. The point of the game is to lose as many pieces as possible, this is done by
 # making sure that if a move is possible, the player must take it. The game ends when either player loses all their pieces or one player runs out of moves. 
 
@@ -29,7 +28,7 @@ class Game:
                     move = self.getMove(legal)
                     self.makeMove(move)
                 else:
-                    print("No legal moves available, skipping turn...")
+                    print("No legal moves available, skipping turn")
             else:
                 legal = self.board.calcLegalMoves(self.turn)
                 print("AI:                  Valid Moves: ")
